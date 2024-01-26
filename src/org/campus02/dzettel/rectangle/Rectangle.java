@@ -6,8 +6,20 @@ public class Rectangle {
     private int b;
 
     public Rectangle(int a, int b) {
-        this.a = a;
+        if (a <= 0) {
+            this.a = 1;
+        } else {
+            this.a = a;
+        }
         this.b = b;
+    }
+
+    public int getA() {
+        return a;
+    }
+
+    public int getB() {
+        return b;
     }
 
     /**

@@ -30,6 +30,12 @@ class CalculatorTest {
         Assertions.assertEquals(erwartet, result);
     }
 
+    @Test
+    void testSubtract() {
+        //int result = Calculator.subtract(2, 1);
+        //int erwartet = 1;
+        Assertions.assertEquals(1, Calculator.subtract(2, 1));
+    }
 
     /**
      * wird nach jedem Test aufgerufen
@@ -39,5 +45,16 @@ class CalculatorTest {
     @AfterEach
     void tearDown() {
         System.out.println("tear down -> nach jedem Test");
+    }
+
+    @Test
+    void compare1With1() {
+        Assertions.assertTrue(Calculator.compare(1, 1));
+    }
+
+    @Test
+    @DisplayName("Vergleiche 1 mit 2")
+    void compare1With2() {
+        Assertions.assertFalse(Calculator.compare(1, 2));
     }
 }
