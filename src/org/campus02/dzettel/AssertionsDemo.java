@@ -60,4 +60,14 @@ public class AssertionsDemo {
         //Assertions.assertEquals(false, b);
     }
 
+    @Test
+    void testAssertThrows() {
+        int[] array = new int[1];
+        array[0] = 1;
+
+        Assertions.assertThrows(ArrayIndexOutOfBoundsException.class, () -> {
+            int i = array[10];
+        });
+    }
+
 }
