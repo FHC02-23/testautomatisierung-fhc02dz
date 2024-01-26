@@ -1,4 +1,4 @@
-package org.campus02.student.calculator;
+package org.campus02.dzettel.calculator;
 
 public class Calculator {
 

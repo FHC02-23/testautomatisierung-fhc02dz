@@ -1,4 +1,4 @@
-package org.campus02.student.rectangle;
+package org.campus02.dzettel.rectangle;
 
 public class Rectangle {
 
